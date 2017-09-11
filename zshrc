@@ -8,7 +8,13 @@ export ZSH=/Users/stevenle/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # Past themes: 'mh'
+
+# edit to customize within ~/.oh-my-zsh/themes/mh.zsh.theme
 ZSH_THEME="mh"
+
+## ** 1. if superuser make the username green
+#if [ $UID -eq 0 ]; then NCOLOR="cyan"; else NCOLOR="white"; fi
+
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -84,6 +90,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 
 function lazygit() {
     git add .
